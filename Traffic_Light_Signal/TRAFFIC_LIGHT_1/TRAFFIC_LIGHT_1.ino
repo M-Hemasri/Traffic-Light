@@ -1,0 +1,181 @@
+//LED PINS
+const int G1=2;
+const int Y1=3;
+const int R1=4;
+const int G2=5;
+const int Y2=6;
+const int R2=7;
+const int G3=8;
+const int Y3=9;
+const int R3=10;
+const int G4=11;
+const int Y4=12;
+const int R4=13;
+//in milli second
+const int G1_DUR=1000;
+const int Y1_DUR=200;
+const int R1_DUR=3600;
+const int G2_DUR=1000;
+const int Y2_DUR=200;
+const int R2_DUR=3600;
+const int G3_DUR=1000;
+const int Y3_DUR=200;
+const int R3_DUR=3600;
+const int G4_DUR=1000;
+const int Y4_DUR=200;
+const int R4_DUR=3600;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(G1,OUTPUT);
+pinMode(Y1,OUTPUT);
+pinMode(R1,OUTPUT);
+pinMode(G2,OUTPUT);
+pinMode(Y2,OUTPUT);
+pinMode(R2,OUTPUT);
+pinMode(G3,OUTPUT);
+pinMode(Y3,OUTPUT);
+pinMode(R3,OUTPUT);
+pinMode(G4,OUTPUT);
+pinMode(Y4,OUTPUT);
+pinMode(R4,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+digitalWrite(G1,HIGH);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,LOW);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,HIGH);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,HIGH);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,HIGH);
+delay(G1_DUR);
+delay(R2_DUR);
+delay(R3_DUR);
+delay(R4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,HIGH);
+digitalWrite(R1,LOW);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,HIGH);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,HIGH);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,HIGH);
+delay(Y1_DUR);
+delay(R2_DUR);
+delay(R3_DUR);
+delay(R4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,HIGH);
+digitalWrite(G2,HIGH);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,LOW);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,HIGH);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,HIGH);
+delay(R1_DUR);
+delay(G2_DUR);
+delay(R3_DUR);
+delay(R4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,HIGH);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,HIGH);
+digitalWrite(R2,LOW);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,HIGH);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,HIGH);
+delay(R1_DUR);
+delay(Y2_DUR);
+delay(R3_DUR);
+delay(R4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,HIGH);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,HIGH);
+digitalWrite(G3,HIGH);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,LOW);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,HIGH);
+delay(R1_DUR);
+delay(R2_DUR);
+delay(G3_DUR);
+delay(R4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,HIGH);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,HIGH);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,HIGH);
+digitalWrite(R3,LOW);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,HIGH);
+delay(R1_DUR);
+delay(R2_DUR);
+delay(Y3_DUR);
+delay(R4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,HIGH);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,HIGH);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,HIGH);
+digitalWrite(G4,HIGH);
+digitalWrite(Y4,LOW);
+digitalWrite(R4,LOW);
+delay(R1_DUR);
+delay(R2_DUR);
+delay(R3_DUR);
+delay(G4_DUR);
+
+digitalWrite(G1,LOW);
+digitalWrite(Y1,LOW);
+digitalWrite(R1,HIGH);
+digitalWrite(G2,LOW);
+digitalWrite(Y2,LOW);
+digitalWrite(R2,HIGH);
+digitalWrite(G3,LOW);
+digitalWrite(Y3,LOW);
+digitalWrite(R3,HIGH);
+digitalWrite(G4,LOW);
+digitalWrite(Y4,HIGH);
+digitalWrite(R4,LOW);
+delay(R1_DUR);
+delay(R2_DUR);
+delay(R3_DUR);
+delay(Y4_DUR);
+}
